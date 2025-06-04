@@ -12,7 +12,7 @@ def solution(cards1, cards2, goal):
         elif cards2 and cards2[0] == goal[0]:
             cards2.popleft()
             goal.popleft()
-        else:
+        else: # goal의 첫 번째 원소가 cards1이나 cards2의 첫 번째 원소와 일치하지 않으면
             return "No"
         
     return "Yes"
