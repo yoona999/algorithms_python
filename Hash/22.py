@@ -1,11 +1,14 @@
+# 오픈 채팅방 모든 기록이 처리된 다음 최종으로 방을 개설한 사람이 보는 메시지를 문자열 배열 형태로
+# 반환
+
 def solution(record):
   answer = [ ]
   uid = { }
   for line in record: 
-    cmd = line.split(" ")
-    if cmd[0] != "Leave":  
+    cmd = line.split(" ") # 각 줄을 하나씩 처리
+    if cmd[0] != "Leave":  # Enter, Change인 경우 
       uid[cmd[1]] = cmd[2]
-  for line in record: 
+  for line in record:  # 각 줄을 하나씩 처리
     cmd = line.split(" ")
 
     if cmd[0] == "Enter":

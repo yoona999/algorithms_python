@@ -1,5 +1,7 @@
+# 신고 결과받기
+# 각 유저별로 처리 결과 메일을 받은 횟수를 배열에 담아 반환
 def solution(id_list, report, k):
-  reported_user = { } 
+  reported_user = { } # 신고된 user
   count = { }  
 
   for r in report:

@@ -3,7 +3,7 @@ def polynomial_hash(str):
   m = 1_000_000_007  # 버킷 크기
   hash_value = 0
   for char in str:
-    hash_value = (hash_value * p + ord(char)) % m
+    hash_value = (hash_value * p + ord(char)) % m # 문자열 해시 함수
   return hash_value
   
 def solution(string_list, query_list):

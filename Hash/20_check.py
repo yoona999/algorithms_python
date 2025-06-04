@@ -1,3 +1,5 @@
+# 완주하지 못한 선수의 이름을 반환
+# dic[key] = 0인 선수는 완주, dic[key] = 1인 선수는 완주하지 못한 것
 def solution(participant, completion):
   dic = { }
 

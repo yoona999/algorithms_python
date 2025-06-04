@@ -1,3 +1,5 @@
+# 두 개의 수로 특정값 만들기
+# 합이 target인 두 수가 arr에 존재하는지 찾고, 있으면 True, 없으면 False 반환
 def count_sort(arr,k):
     hash = [0] * (k + 1)  # k는 최대값
     for num in arr:

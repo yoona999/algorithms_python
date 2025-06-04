@@ -1,5 +1,6 @@
+# 장르 - 노래 - 재생 횟수가 같은 노래 중에서는 고유 번호가 낮은 노래 먼저 수록
 def solution(genres, plays):
-  answer = [ ]
+  ans = [ ] # 결과를 저장할 리스트
   genres_dict = { }
   play_dict = { }
 
@@ -16,6 +17,6 @@ def solution(genres, plays):
 
   for genre, _ in sorted_genres:
     sorted_songs = sorted(genres_dict[genre], key=lambda x: (-x[1], x[0]))
-    answer.extend([idx for idx, _ in sorted_songs[:2]])
+    ans.extend([idx for idx, _ in sorted_songs[:2]])
 
-  return answer
+  return ans
